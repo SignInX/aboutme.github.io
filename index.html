@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> About | SignIn </title>
+  <link rel="icon" sizes="16x16" href="./img/scull.jpg"/>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0d0742;
+    }
+
+    .container {
+      background-color: #0d0742;
+      display: flex;
+      position: relative;
+      width: 100%;
+      max-width: 100vh;
+      border: 0px
+    }
+
+    .half {
+      flex: 1;
+      padding: 20px;
+      border: 0px
+    }
+
+    .image-area {
+      text-align: right;
+    }
+
+    .image-area img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    .typed {
+      position: absolute;
+      left: 20%;
+      top: 250px;
+      transform: translateX(-50%);
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      color: #110dc4;
+      text-align: center;
+    }
+    .logo-banner {
+      overflow: hidden;
+      background-color: #0d0742;
+      padding: 20px 0;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      margin: 0 30px;
+      max-width: 100px;
+      height: auto;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="half">
+  </div>
+  <div class="half image-area">
+    <img src="./img/prv.jpg">
+  </div>
+  <span class="typed"></span>
+</div>
+<div class="logo-banner">
+    <div class="logo-container">
+      <img class="logo" src="./img/air_force.png">
+      <img class="logo" src="./img/cert.png">
+      <img class="logo" src="./img/interpol.png">
+      <img class="logo" src="./img/cia.png">
+      <img class="logo" src="./img/mit.png">
+      <img class="logo" src="./img/hava.png">
+      <img class="logo" src="./img/genel.png">
+      <img class="logo" src="./img/egm.png">
+      <img class="logo" src="./img/siber.png">
+      <img class="logo" src="./img/tht.png">
+      
+
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed('.typed', {
+    strings: ["Student.", "Beginner Coder.", "Python.", "Java.", "Security Blue Teams."],
+    typeSpeed: 25,
+    backSpeed: 25,
+    loop: true
+  });
+</script>
+
+
+</body>
+</html>
